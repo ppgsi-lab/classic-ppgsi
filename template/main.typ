@@ -82,7 +82,7 @@ A tabela 1 é um exemplo de como apresentar tabelas de acordo com essa norma. Ve
 
 #ppgsi.table(
   caption: [Exemplo de título de tabela],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
   columns: (1in, 1in, 1in, 1in),
   align: left,
   header: ([Cabeçalho 1], [Cabeçalho 2], [Cabeçalho 3], [Cabeçalho 4]),
@@ -109,7 +109,7 @@ O quadro 1 é um exemplo de como apresentar quadros de acordo com essa norma. Ob
 
 #ppgsi.frame(
   caption: [Exemplo de título de quadro],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
   columns: (1in, 1in, 1in, 1in),
   align: left,
   header: ([Cabeçalho 1], [Cabeçalho 2], [Cabeçalho 3], [Cabeçalho 4]),
@@ -172,7 +172,7 @@ O algoritmo 1 é um exemplo de como apresentar ilustrações de acordo com essa 
 
 #ppgsi.algorithm(
   caption: [Exemplo de título de ilustração do tipo algoritmo, que pode ser maior para apresentar mais explicações sobre o conteúdo do algoritmo, se for o caso],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
   [*procedure* #smallcaps[MyProcedure]],
   $#h(1em) p a s s o-1$,
   $#h(1em) p a s s o-2$,
@@ -286,7 +286,7 @@ A figura 3 apresenta um gráfico de dados gerado com o pacote lilaq, embutido em
     ppgsi.lq.plot((0, 1, 2, 3, 4, 5), (0, 1, 4, 9, 16, 25), mark: "o", label: [medições]),
   ),
   caption: [Exemplo de gráfico de dados gerado com lilaq],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
 )
 
 == Diagramas com cetz
@@ -323,7 +323,7 @@ A figura 4 apresenta uma rede neural feedforward totalmente conectada, desenhada
     }
   }),
   caption: [Exemplo de rede neural feedforward desenhada com cetz],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
 )
 
 == Listagens de código com codly
@@ -332,7 +332,7 @@ O código 1 é um exemplo de listagem de código-fonte, estilizada automaticamen
 
 #ppgsi.code(
   caption: [Exemplo de listagem de código-fonte do tipo Código],
-  source: [Marcelo Fantinato, 2015],
+  source: ppgsi.myself,
 )[```python
 def reconstruir(pontos):
     """Reconstrução de superfície homeomórfica."""
